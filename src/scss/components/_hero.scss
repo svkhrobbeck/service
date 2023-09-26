@@ -1,0 +1,81 @@
+.hero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero__title {
+  @include fontSizes(65);
+  @include tealTextGradient;
+  margin-bottom: 0;
+  margin-right: auto;
+  text-shadow: 0px 0px 40px rgba($color: $teal, $alpha: 0.3);
+
+  &-inner {
+    text-transform: uppercase;
+  }
+}
+
+.hero__subtitle {
+  @include fontSizes(45);
+  margin-bottom: 25px;
+  @include tealTextGradient;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 30px rgba($color: $teal, $alpha: 0.3);
+}
+
+.hero__desc {
+  @include fontSizes(22);
+  margin-bottom: 25px;
+  color: rgba($color: $white, $alpha: 0.65);
+  max-width: 672px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero__btn-text {
+  margin-right: 12px;
+}
+
+.hero__btn-icon {
+  width: 9px;
+  height: 16px;
+}
+
+.hero__link {
+  color: rgba($color: $white, $alpha: 0.4);
+}
+
+.hero__image-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: -170px;
+  width: 650px;
+  height: 650px;
+  background: url("../assets/images/hero-circular.svg") no-repeat center / contain;
+}
+
+.hero__image {
+  max-width: 603px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+}
