@@ -13,9 +13,9 @@ const Hero = () => {
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
           </p>
           <div className="hero__actions">
-            <a className="button--teal hero__btn" href="#">
-              <span className="hero__btn-text">Батафсил маълумот</span>
-              <img className="hero__btn-icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
+            <a className="button--teal button--with-icon" href="#">
+              <span className="button__text">Батафсил маълумот</span>
+              <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
             </a>
             <a className="hero__link" href="#">
               Саволларингиз борми?
