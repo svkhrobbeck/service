@@ -33,6 +33,7 @@ const hero = () => {
           />
         </div>
       </div>
+      <div className="hero__divider" />
     </section>
   );
 };
