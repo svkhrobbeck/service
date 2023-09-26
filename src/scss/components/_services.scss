@@ -93,4 +93,8 @@
   &--instagram::before {
     background: url("../assets/icons/instagram.svg") no-repeat center / contain;
   }
+
+  &--code::before {
+    background: url("../assets/icons/code.svg") no-repeat center / contain;
+  }
 }
