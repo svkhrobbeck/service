@@ -31,6 +31,10 @@
   gap: 35px;
 }
 
+.nav__link {
+  padding: 4px;
+}
+
 .nav__link,
 .header__order-btn {
   @include fontSizes(20);
