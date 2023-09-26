@@ -1,0 +1,8 @@
+@mixin fontSizes($size) {
+  @if $size == 20 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
