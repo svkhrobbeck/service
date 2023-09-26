@@ -1,8 +1,28 @@
 @mixin fontSizes($size) {
-  @if $size == 20 {
-    margin-top: 0;
+  margin-top: 0;
+  line-height: normal;
+
+  @if $size == 65 {
+    font-size: 65px;
+    font-weight: 800;
+  } @else if $size == 45 {
+    font-size: 45px;
+    font-weight: 800;
+  } @else if $size == 22 {
+    font-size: 22px;
+    font-weight: 500;
+  } @else if $size == 20 {
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+  } @else if $size == 19 {
+    font-size: 19px;
+    font-weight: 400;
   }
+}
+
+@mixin tealTextGradient {
+  background: $tealGradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

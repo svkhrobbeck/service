@@ -1,0 +1,6 @@
+.header-hero-wrapper {
+  height: 100vh;
+  background: $siteBg url("../assets/images/header-hero-bg.png") no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+}

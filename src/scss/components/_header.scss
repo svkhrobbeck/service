@@ -1,0 +1,37 @@
+.header {
+  padding: 50px 0;
+  margin-bottom: 180px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__img {
+  max-width: 97px;
+  width: 100%;
+  height: auto;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav__link,
+.header__order-btn {
+  @include fontSizes(20);
+}
