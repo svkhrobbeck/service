@@ -16,6 +16,7 @@ const Header = () => {
                   Хизматлар
                 </a>
               </li>
+              
               <li className="nav__item">
                 <a className="nav__link" href="#">
                   Нима учун айнан биз?

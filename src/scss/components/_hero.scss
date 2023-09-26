@@ -14,9 +14,9 @@
 .hero__title {
   @include fontSizes(65);
   @include tealTextGradient;
+  @include textShadow(40px);
   margin-bottom: 0;
   margin-right: auto;
-  text-shadow: 0px 0px 40px rgba($color: $teal, $alpha: 0.3);
 
   &-inner {
     text-transform: uppercase;
@@ -28,7 +28,7 @@
   margin-bottom: 25px;
   @include tealTextGradient;
   text-transform: uppercase;
-  text-shadow: 0px 0px 30px rgba($color: $teal, $alpha: 0.3);
+  @include textShadow(30px);
 }
 
 .hero__desc {
@@ -70,4 +70,8 @@
   width: 100%;
   height: 5px;
   background-image: $lineDividerGradient;
+}
+
+.hero__btn-text {
+  @include fontSizes(19);
 }

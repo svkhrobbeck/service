@@ -1,0 +1,85 @@
+.services {
+  padding: 112px 0;
+  min-height: 100vh;
+}
+
+.services__title {
+  @include fontSizes(65);
+  @include tealTextGradient;
+  @include textShadow(30px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 110px;
+}
+
+.services__container {
+  max-width: 1813px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+
+  @media only screen and (max-width: 1650px) {
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    gap: 20px;
+  }
+}
+
+.service {
+  max-width: 370px;
+  width: 100%;
+  border-radius: 36px;
+  border: 1px solid rgba($color: $white, $alpha: 0.2);
+  background-color: $grey;
+  background-image: $greyGradient;
+  padding: 44px 30px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service__title {
+  @include fontSizes(32);
+  margin-bottom: 26px;
+  line-height: 1.25;
+}
+
+.service__description {
+  @include fontSizes(17);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.service__price-time-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin-top: auto;
+  margin-bottom: 18px;
+}
+
+.service__price {
+  @include fontSizes(22);
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.service__time,
+.service__link-text {
+  @include fontSizes(17);
+  margin-bottom: 0;
+}
+
+.service__link {
+  width: 100%;
+  display: block;
+}

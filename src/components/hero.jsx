@@ -13,8 +13,8 @@ const Hero = () => {
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
           </p>
           <div className="hero__actions">
-            <a className="button--teal button--with-icon" href="#">
-              <span className="button__text">Батафсил маълумот</span>
+            <a className="hero__btn button--teal button--with-icon" href="#">
+              <span className="hero__btn-text button__text">Батафсил маълумот</span>
               <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
             </a>
             <a className="hero__link" href="#">

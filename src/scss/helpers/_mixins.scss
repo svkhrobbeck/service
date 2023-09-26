@@ -2,21 +2,40 @@
   margin-top: 0;
   line-height: normal;
 
+  // 65
   @if $size == 65 {
     font-size: 65px;
     font-weight: 800;
-  } @else if $size == 45 {
+  }
+  // 45
+  @else if $size == 45 {
     font-size: 45px;
     font-weight: 800;
-  } @else if $size == 22 {
+  }
+  // 32
+  @else if $size == 32 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  // 22
+  @else if $size == 22 {
     font-size: 22px;
     font-weight: 500;
-  } @else if $size == 20 {
+  }
+  // 20
+  @else if $size == 20 {
     font-size: 20px;
     font-weight: 400;
-  } @else if $size == 19 {
+  }
+  // 19
+  @else if $size == 19 {
     font-size: 19px;
     font-weight: 400;
+  }
+  // 17
+  @else if $size == 17 {
+    font-size: 17px;
+    font-weight: 600;
   }
 }
 
@@ -25,4 +44,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@mixin textShadow($px: 30px) {
+  text-shadow: 0px 0px $px rgba($color: $teal, $alpha: 0.3);
 }
