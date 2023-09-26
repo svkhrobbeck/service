@@ -1,6 +1,6 @@
 import { heroImg, heroImg2x, iconArrowRight } from "../assets";
 
-const hero = () => {
+const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__container container">
@@ -38,4 +38,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
