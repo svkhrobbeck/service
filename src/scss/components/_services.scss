@@ -57,29 +57,40 @@
   margin-bottom: 36px;
 }
 
-.service__price-time-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 22px;
-  margin-top: auto;
-  margin-bottom: 18px;
-}
-
 .service__price {
   @include fontSizes(22);
-  margin-right: auto;
-  margin-bottom: 0;
+  margin-top: auto;
+  margin-bottom: 22px;
+}
+
+.service__time {
+  margin-bottom: 18px;
 }
 
 .service__time,
 .service__link-text {
   @include fontSizes(17);
-  margin-bottom: 0;
 }
 
 .service__link {
-  width: 100%;
-  display: block;
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+
+  &--chatgpt::before {
+    background: url("../assets/icons/chatgpt.svg") no-repeat center / contain;
+  }
+
+  &--telegram::before {
+    background: url("../assets/icons/telegram.svg") no-repeat center / contain;
+  }
+
+  &--instagram::before {
+    background: url("../assets/icons/instagram.svg") no-repeat center / contain;
+  }
 }

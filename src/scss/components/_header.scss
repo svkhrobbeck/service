@@ -34,4 +34,6 @@
 .nav__link,
 .header__order-btn {
   @include fontSizes(20);
+  cursor: pointer;
+  user-select: none;
 }

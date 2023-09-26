@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { logoImg } from "../assets";
 
 const Header = () => {
@@ -12,26 +13,24 @@ const Header = () => {
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <a className="nav__link" href="#">
+                <Link className="nav__link" to="services" spy={true} smooth={true}>
                   Хизматлар
-                </a>
+                </Link>
               </li>
-              
+
               <li className="nav__item">
-                <a className="nav__link" href="#">
+                <Link className="nav__link" to="features" spy={true} smooth={true}>
                   Нима учун айнан биз?
-                </a>
+                </Link>
               </li>
               <li className="nav__item">
-                <a className="nav__link" href="#">
+                <Link className="nav__link" to="features" spy={true} smooth={true}>
                   Контакт
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
-          <a className="button--teal header__order-btn" href="#">
-            Буюртма қилиш
-          </a>
+          <a className="button--teal header__order-btn">Буюртма қилиш</a>
         </div>
       </div>
     </header>
