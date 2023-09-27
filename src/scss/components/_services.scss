@@ -1,9 +1,20 @@
 .services {
   padding: 112px 0;
   min-height: 100vh;
-  background: url("../assets/images/services-bg-decor.svg") no-repeat top,
-    url("../assets/images/services-bg-decor-reverse.svg") no-repeat bottom;
+  background: url("../assets/images/services-bg-decor.svg") no-repeat center / cover;
   background-size: 100% 1066px, 100% 1066px;
+
+  @media only screen and (max-width: $desktop) {
+    padding-top: 85px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    padding-top: 68px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-top: 55px;
+  }
 }
 
 .services__title {
@@ -13,6 +24,18 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 110px;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 90px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 72px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 62px;
+  }
 }
 
 .services__container {
@@ -22,11 +45,17 @@
 
   @media only screen and (max-width: $desktop) {
     gap: 30px;
+    grid-template-columns: auto auto;
   }
 
-  // @media only screen and (max-width: $desktop) {
-  //   gap: 20px;
-  // }
+  @media only screen and (max-width: $tabletL) {
+    gap: 20px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    gap: 18px;
+    grid-template-columns: auto;
+  }
 }
 
 .service {
@@ -40,12 +69,53 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 90%;
+    justify-self: center;
+    padding: 38px 26px 23px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    padding: 33px 21px 21px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 90%;
+    padding: 30px 18px 19px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    max-width: 94%;
+    padding: 28px 15px 17px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 100%;
+    padding: 26px 12px 16px;
+  }
 }
 
 .service__title {
   @include fontSizes(32);
-  margin-bottom: 26px;
+  margin-bottom: 46px;
   line-height: 1.25;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 38px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 32px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 28px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 24px;
+  }
 }
 
 .service__description {
@@ -53,16 +123,64 @@
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 36px;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 28px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 18px;
+  }
 }
 
 .service__price {
   @include fontSizes(22);
   margin-top: auto;
   margin-bottom: 22px;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 18px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 14px;
+  }
 }
 
 .service__time {
   margin-bottom: 18px;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 14px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 10px;
+  }
 }
 
 .service__time,
@@ -97,6 +215,6 @@
   }
 }
 
-.service:hover .service__link-text {
-  margin-right: 16px;
+.service__link-icon {
+  margin-left: auto;
 }
