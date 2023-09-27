@@ -13,6 +13,7 @@ const App = () => {
       <Services />
       <Contact />
       <Faq />
+      <footer className="footer">© 2023, WEB Service- tempservice@gmail.com</footer>
     </>
   );
 };

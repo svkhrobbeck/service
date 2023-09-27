@@ -1,8 +1,11 @@
-.contact__title {
+.faq {
+  min-height: 100vh;
+}
+
+.faq__title {
   @include fontSizes(65);
   @include tealTextGradient;
   @include shadow(40px);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 70px;
 }

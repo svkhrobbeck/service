@@ -1,0 +1,79 @@
+.accordion {
+  box-shadow: 0px 0px 62px rgba($color: $teal, $alpha: 0.1);
+}
+
+.accordion__toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  // background-image: $greyGradient;
+  background-color: rgba($color: $teal, $alpha: 0.1);
+  border: 1px solid rgba($color: $white, $alpha: 0.2);
+  padding: 20px;
+  border-radius: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.accordion {
+  &:first-child .accordion__toggler {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &:last-child .accordion__toggler {
+    border-radius: 0 0 8px 8px;
+  }
+
+  &:not(:first-child) .accordion__toggler {
+    border-top: none;
+  }
+
+  &.accordion--open:not(:first-child) .accordion__toggler {
+    border-radius: 0;
+  }
+}
+
+.accordion__title {
+  @include fontSizes(22);
+  margin: 0;
+}
+
+.accordion__icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  transition: $transition;
+
+  &--open {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion__content {
+  border: 1px solid rgba($color: $white, $alpha: 0.2);
+  border-top: none;
+  transition: $transition;
+  height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--open {
+    padding: 20px;
+
+    &:last-child {
+      border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+    }
+  }
+}
+
+.accordion__desc {
+  @include fontSizes(17);
+  font-weight: 400;
+  color: rgba($color: $white, $alpha: 0.9);
+  margin: 0;
+}
