@@ -29,7 +29,7 @@ const Hero = () => {
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
           </p>
           <div className="hero__actions">
-            <Link className="hero__btn button--teal button--with-icon" to="services" spy={true} smooth={tru e}>
+            <Link className="hero__btn button--teal button--with-icon" to="services" spy={true} smooth={true}>
               <span className="hero__btn-text button__text">Батафсил</span>
               <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
             </Link>
