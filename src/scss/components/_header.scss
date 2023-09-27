@@ -53,17 +53,17 @@
 }
 
 .header__nav-toggler-img {
-  max-width: 52px;
+  max-width: 36px;
   width: 100%;
   height: auto;
   filter: drop-shadow(0px 0px 12px rgba($color: $teal, $alpha: 0.4));
 
   @media only screen and (max-width: $mobileL) {
-    max-width: 44px;
+    max-width: 32px;
   }
 
   @media only screen and (max-width: $mobile) {
-    max-width: 36px;
+    max-width: 28px;
   }
 }
 
@@ -149,6 +149,14 @@
   width: 100%;
   height: auto;
   filter: drop-shadow(0px 0px 12px rgba($color: $teal, $alpha: 0.4));
+
+  @media only screen and (max-width: $mobileL) {
+    max-width: 32px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 28px;
+  }
 }
 
 .nav__link {

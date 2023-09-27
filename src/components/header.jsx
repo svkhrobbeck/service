@@ -16,7 +16,7 @@ const Header = () => {
       <div className="header__container container">
         <div className="header__left">
           <button className="button header__nav-toggler" onClick={() => setIsNavOpen(true)}>
-            <img className="header__nav-toggler-img" src={iconMenu} alt="icon menu" width={52} height={50} />
+            <img className="header__nav-toggler-img" src={iconMenu} alt="icon menu" width={36} height={36} />
           </button>
           <a className="logo header__logo" href="/">
             <img className="logo__img" src={logoImg} alt="logo" width={97} height={49} />
