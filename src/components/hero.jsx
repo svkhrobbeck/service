@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 import { heroImg, heroImg2x, iconArrowRight } from "../assets";
 
 const Hero = () => {
@@ -5,10 +6,16 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__container container">
         <div className="hero__content">
-          <h2 className="hero__title">
-            ChatGPT <span className="hero__title-inner">Аккаунтлар</span>
-          </h2>
-          <h3 className="hero__subtitle">Телеграм рақамлар</h3>
+          <h2 className="hero__title">Бизнесингиз учун</h2>
+          <h3 className="hero__subtitle">
+            <TypeAnimation
+              className="hero__subtitle-inner"
+              sequence={["ВEБ-САЙТ ХИЗМАТЛАРИ", 1000, "ТEЛEГРАМ РАҚАМЛАР", 1000, "ChatGPT АККАУНТЛАР", 1000]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </h3>
           <p className="hero__desc">
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
           </p>

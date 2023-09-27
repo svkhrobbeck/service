@@ -17,18 +17,17 @@
   @include textShadow(40px);
   margin-bottom: 0;
   margin-right: auto;
-
-  &-inner {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
 }
 
 .hero__subtitle {
   @include fontSizes(45);
   margin-bottom: 25px;
   @include tealTextGradient;
-  text-transform: uppercase;
-  @include textShadow(30px);
+}
+
+.hero__subtitle-inner {
+  @include textShadow(35px);
 }
 
 .hero__desc {

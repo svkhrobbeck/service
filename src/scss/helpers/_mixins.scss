@@ -2,6 +2,12 @@
   margin-top: 0;
   line-height: normal;
 
+  // 96
+  @if $size == 96 {
+    font-size: 96px;
+    font-weight: 700;
+    letter-spacing: 1.92px;
+  }
   // 65
   @if $size == 65 {
     font-size: 65px;
