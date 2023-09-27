@@ -10,7 +10,16 @@ const Hero = () => {
           <h3 className="hero__subtitle">
             <TypeAnimation
               className="hero__subtitle-inner"
-              sequence={["ВEБ-САЙТ ХИЗМАТЛАРИ", 1000, "ТEЛEГРАМ РАҚАМЛАР", 1000, "ChatGPT АККАУНТЛАР", 1000]}
+              sequence={[
+                "веб-сайт хизматлари",
+                1000,
+                "Телеграм Рақамлар",
+                1000,
+                "Инстаграм Обуначи",
+                1000,
+                "ЧатГПТ аккаунтлар",
+                1000,
+              ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

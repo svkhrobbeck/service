@@ -1,4 +1,5 @@
 import { Header, Hero } from "./";
+import Contact from "./contact";
 import Services from "./services";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <Hero />
       </div>
       <Services />
+      <Contact />
     </>
   );
 };
