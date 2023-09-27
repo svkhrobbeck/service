@@ -1,6 +1,5 @@
-import { Header, Hero } from "./";
-import Contact from "./contact";
-import Services from "./services";
+import { Contact, Faq, Header, Hero, Services } from "./";
+import Features from "./features";
 
 const App = () => {
   return (
@@ -10,8 +9,10 @@ const App = () => {
         <Header />
         <Hero />
       </div>
+      <Features />
       <Services />
       <Contact />
+      <Faq />
     </>
   );
 };

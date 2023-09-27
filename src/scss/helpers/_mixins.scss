@@ -28,6 +28,11 @@
     font-size: 32px;
     font-weight: 700;
   }
+  // 26
+  @else if $size == 26 {
+    font-size: 26px;
+    font-weight: 600;
+  }
   // 22
   @else if $size == 22 {
     font-size: 22px;

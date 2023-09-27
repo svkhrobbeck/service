@@ -13,14 +13,14 @@ const Header = () => {
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <Link className="nav__link" to="services" spy={true} smooth={true}>
-                  Хизматлар
+                <Link className="nav__link" to="features" spy={true} smooth={true}>
+                  Нима учун айнан биз?
                 </Link>
               </li>
 
               <li className="nav__item">
-                <Link className="nav__link" to="features" spy={true} smooth={true}>
-                  Нима учун айнан биз?
+                <Link className="nav__link" to="services" spy={true} smooth={true}>
+                  Хизматлар
                 </Link>
               </li>
               <li className="nav__item">

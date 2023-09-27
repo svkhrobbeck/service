@@ -1,8 +1,9 @@
 .services {
   padding: 112px 0;
   min-height: 100vh;
-  background: url("../assets/images/services-bg-decor.svg") repeat-y top;
-  background-size: 100%, 1350px;
+  background: url("../assets/images/services-bg-decor.svg") no-repeat top,
+    url("../assets/images/services-bg-decor-reverse.svg") no-repeat bottom;
+  background-size: 100% 1066px, 100% 1066px;
 }
 
 .services__title {
