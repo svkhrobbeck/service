@@ -11,12 +11,12 @@
   }
 
   @media only screen and (max-width: $mobileL) {
-    padding-top: 260px;
+    padding-top: 190px;
     flex-grow: 0;
   }
 
   @media only screen and (max-width: $mobile) {
-    padding-top: 240px;
+    padding-top: 150px;
   }
 }
 
@@ -30,6 +30,14 @@
 .hero__content {
   position: relative;
   z-index: 3;
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 170px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    padding-bottom: 140px;
+  }
 
   @media only screen and (max-width: $mobileL) {
     padding-bottom: 190px;
@@ -150,8 +158,8 @@
   }
 
   @media only screen and (max-width: $mobileL) {
-    width: 347px;
-    height: 347px;
+    width: 340px;
+    height: 340px;
   }
 }
 
@@ -180,7 +188,7 @@
   }
 
   @media only screen and (max-width: $mobileL) {
-    max-width: 330px;
+    max-width: 323px;
   }
 }
 

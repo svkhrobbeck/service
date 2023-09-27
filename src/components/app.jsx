@@ -13,7 +13,11 @@ const App = () => {
       <Services />
       <Faq />
       <Contact />
-      <footer className="footer">© 2023, WEB Service - suhrobbek_soatov@mail.ru</footer>
+      <footer className="footer">
+        ©2023 ВEБ Сервис.
+        <br />
+        suhrobbek_soatov@mail.ru
+      </footer>
     </>
   );
 };

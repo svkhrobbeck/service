@@ -18,6 +18,14 @@
     padding: 24px 0;
   }
 
+  @media only screen and (max-width: $mobileL) {
+    padding: 18px 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 10px 0;
+  }
+
   &--sticky {
     background-color: rgba($color: #1d1d1e, $alpha: 0.97);
     padding: 15px 0;
@@ -64,7 +72,7 @@
   }
 
   @media only screen and (max-width: $mobile) {
-    max-width: 28px;
+    max-width: 22px;
   }
 }
 
@@ -178,7 +186,7 @@
   }
 
   @media only screen and (max-width: $mobile) {
-    max-width: 28px;
+    max-width: 22px;
   }
 }
 
