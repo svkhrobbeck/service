@@ -75,6 +75,10 @@
   @media only screen and (max-width: $desktop) {
     margin-right: 18px;
   }
+
+  @media only screen and (max-width: $tablet) {
+    margin-right: 0;
+  }
 }
 
 .logo__img {
@@ -84,6 +88,18 @@
 
   @media only screen and (max-width: $desktop) {
     max-width: 90px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    max-width: 80px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 70px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    max-width: 65px;
   }
 }
 

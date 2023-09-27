@@ -5,6 +5,7 @@ const Features = () => {
     <section className="features" id="features">
       <div className="container features__container">
         <div className="features__content">
+          <span className="features__badge">Жамоамиз энг энг яхши мутахассислари иборат.</span>
           <h2 className="features__title">Биз билан ишлаш сабаблари</h2>
           <p className="features__description">
             Рақобатчилар ўзларини энг зўри эканликларини айтишсада, биз бунинг аксини амалда исботлаймиз.
