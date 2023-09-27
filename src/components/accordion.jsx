@@ -1,13 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { iconArrowBottom } from "../assets";
 
 const Accordion = ({ title, id, desc, selected, onClick }) => {
   const isOpen = id === selected;
   const elContent = useRef(null);
-
-  useEffect(() => {
-    console.dir(elContent.current);
-  }, []);
 
   return (
     <div className={`accordion ${isOpen ? "accordion--open" : ""}`}>

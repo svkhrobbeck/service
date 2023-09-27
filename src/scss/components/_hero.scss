@@ -1,7 +1,23 @@
 .hero {
+  padding-top: 340px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+
+  @media only screen and (max-width: $tablet) {
+    padding-top: 320px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    padding-top: 260px;
+    flex-grow: 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-top: 240px;
+  }
 }
 
 .hero__container {
@@ -11,6 +27,15 @@
   position: relative;
 }
 
+.hero__content {
+  position: relative;
+  z-index: 3;
+
+  @media only screen and (max-width: $mobileL) {
+    padding-bottom: 190px;
+  }
+}
+
 .hero__title {
   @include fontSizes(65);
   @include tealTextGradient;
@@ -18,6 +43,10 @@
   margin-bottom: 0;
   margin-right: auto;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .hero__subtitle {
@@ -25,10 +54,24 @@
   margin-bottom: 25px;
   @include tealTextGradient;
   text-transform: uppercase;
+  @include shadow(35px);
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 3px;
+  }
 }
 
-.hero__subtitle-inner {
-  @include shadow(35px);
+.hero__heading {
+  @include fontSizes(32);
+  @include shadow(40px);
+  @include tealTextGradient;
+  text-transform: uppercase;
+  display: none;
+  margin-bottom: 8px;
+
+  @media only screen and (max-width: $mobile) {
+    display: block;
+  }
 }
 
 .hero__desc {
@@ -36,6 +79,28 @@
   margin-bottom: 25px;
   color: rgba($color: $white, $alpha: 0.65);
   max-width: 672px;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 590px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    max-width: 420px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    max-width: 320px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 210px;
+    margin-bottom: 17px;
+  }
 }
 
 .hero__actions {
@@ -46,6 +111,11 @@
 
 .hero__link {
   color: rgba($color: $white, $alpha: 0.4);
+  cursor: pointer;
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .hero__image-wrapper {
@@ -55,6 +125,32 @@
   width: 650px;
   height: 650px;
   background: url("../assets/images/hero-circular.svg") no-repeat center / contain;
+
+  @media only screen and (max-width: $container) {
+    width: 600px;
+    height: 600px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    width: 570px;
+    height: 570px;
+    right: -140px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    width: 470px;
+    height: 470px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    width: 430px;
+    height: 430px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    width: 347px;
+    height: 347px;
+  }
 }
 
 .hero__image {
@@ -64,6 +160,26 @@
   position: absolute;
   bottom: 0;
   left: -60px;
+
+  @media only screen and (max-width: $container) {
+    max-width: 550px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 490px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    width: 430px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    width: 400px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    max-width: 330px;
+  }
 }
 
 .hero__divider {

@@ -1,3 +1,5 @@
+import { iconInstagram, iconMail, iconTelegram } from "../assets";
+
 export const services = [
   {
     name: "«ChatGPT» аккаунт яратиш",
@@ -86,4 +88,28 @@ export const frequentlyQuestions = [
     desc: "This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow. til the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow. til the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow. ",
     id: "faq4",
   },
+];
+
+export const socials = [
+  {
+    id: "icon1",
+    link: "https://instagram.com/svkhrobbeck",
+    text: "Instagram orqali bog'lanish",
+    alt: "icon instagram",
+    icon: iconInstagram,
+  },
+  {
+    id: "icon2",
+    link: "https://t.me/svkhrobbeck",
+    text: "Telegram orqali bog'lanish",
+    alt: "icon telegram",
+    icon: iconTelegram,
+  },
+  // {
+  //   id: "icon3",
+  //   link: "https://t.me/svkhrobbeck",
+  //   text: "Elektron pochta orqali bog'lanish",
+  //   alt: "icon mail",
+  //   icon: iconMail,
+  // },
 ];

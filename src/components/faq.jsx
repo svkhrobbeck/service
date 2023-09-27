@@ -6,7 +6,7 @@ const Faq = () => {
   const [setselectedQuestion, setSetselectedQuestion] = useState("");
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="container faq__container">
         <h2 className="faq__title">FAQ</h2>
         <div className="faq__accordions">

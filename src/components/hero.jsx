@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { heroImg, heroImg2x, iconArrowRight } from "../assets";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -7,35 +8,34 @@ const Hero = () => {
       <div className="hero__container container">
         <div className="hero__content">
           <h2 className="hero__title">Бизнесингиз учун</h2>
-          <h3 className="hero__subtitle">
-            <TypeAnimation
-              className="hero__subtitle-inner"
-              sequence={[
-                "веб-сайт хизматлари",
-                1000,
-                "Телеграм Рақамлар",
-                1000,
-                "Инстаграм Обуначи",
-                1000,
-                "CHATGPT аккаунтлар",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h3>
+          <TypeAnimation
+            className="hero__subtitle"
+            sequence={[
+              "веб-сайт яратиш",
+              1000,
+              "Telegram рақам",
+              1000,
+              "Instagram обуначи",
+              1000,
+              "CHATGPT аккаунт",
+              1000,
+            ]}
+            wrapper="h3"
+            speed={50}
+            repeat={Infinity}
+          />
+          <h4 className="hero__heading">Хизматлари</h4>
           <p className="hero__desc">
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
           </p>
           <div className="hero__actions">
-            <a className="hero__btn button--teal button--with-icon" href="#">
-              <span className="hero__btn-text button__text">Батафсил маълумот</span>
+            <Link className="hero__btn button--teal button--with-icon" to="services" spy={true} smooth={tru e}>
+              <span className="hero__btn-text button__text">Батафсил</span>
               <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
-            </a>
-            <a className="hero__link" href="#">
+            </Link>
+            <Link className="hero__link" to="contact" spy={true} smooth={true}>
               Саволларингиз борми?
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero__image-wrapper">

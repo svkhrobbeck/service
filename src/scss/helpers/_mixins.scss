@@ -12,6 +12,26 @@
   @if $size == 65 {
     font-size: 65px;
     font-weight: 800;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 51px;
+    }
+
+    @media only screen and (max-width: $tabletL) {
+      font-size: 42px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: $mobileL) {
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 24px;
+    }
   }
   // 55
   @if $size == 55 {
@@ -22,11 +42,51 @@
   @else if $size == 45 {
     font-size: 45px;
     font-weight: 800;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 38px;
+    }
+
+    @media only screen and (max-width: $tabletL) {
+      font-size: 32px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $mobileL) {
+      font-size: 22px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 18px;
+    }
   }
   // 32
   @else if $size == 32 {
     font-size: 32px;
     font-weight: 700;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $tabletL) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: $mobileL) {
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
   }
   // 26
   @else if $size == 26 {
@@ -37,21 +97,70 @@
   @else if $size == 22 {
     font-size: 22px;
     font-weight: 500;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: $tabletL) {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 13px;
+    }
   }
   // 20
   @else if $size == 20 {
     font-size: 20px;
     font-weight: 400;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 19px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
   }
   // 19
   @else if $size == 19 {
     font-size: 19px;
     font-weight: 400;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 19px;
+    }
+
+    @media only screen and (max-width: $tabletL) {
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: $mobileL) {
+      font-size: 12px;
+    }
   }
   // 17
   @else if $size == 17 {
     font-size: 17px;
     font-weight: 600;
+  }
+  // 15
+  @else if $size == 17 {
+    font-size: 15px;
+    font-weight: 400;
   }
 }
 

@@ -11,9 +11,9 @@ const App = () => {
       </div>
       <Features />
       <Services />
-      <Contact />
       <Faq />
-      <footer className="footer">© 2023, WEB Service- tempservice@gmail.com</footer>
+      <Contact />
+      <footer className="footer">© 2023, WEB Service- suhrobbek_soatov@mail.ru</footer>
     </>
   );
 };

@@ -1,11 +1,23 @@
 .header-hero-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   background: $siteBg url("../assets/images/header-hero-bg.png") no-repeat center / cover;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: $tabletL) {
+    min-height: 90vh;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    min-height: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .footer {
   padding: 32px 0;
   text-align: center;
+  line-height: 1.05;
+  color: rgba($color: $white, $alpha: 0.7);
 }
