@@ -14,7 +14,7 @@
 .hero__title {
   @include fontSizes(65);
   @include tealTextGradient;
-  @include textShadow(40px);
+  @include shadow(40px);
   margin-bottom: 0;
   margin-right: auto;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 }
 
 .hero__subtitle-inner {
-  @include textShadow(35px);
+  @include shadow(35px);
 }
 
 .hero__desc {
@@ -74,4 +74,8 @@
 
 .hero__btn-text {
   @include fontSizes(19);
+}
+
+.hero__btn:hover .hero__btn-text {
+  margin-right: 16px;
 }

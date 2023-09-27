@@ -1,35 +1,31 @@
 .services {
   padding: 112px 0;
   min-height: 100vh;
-  background: url("../assets/images/services-bg-decor.svg") no-repeat top / cover;
+  background: url("../assets/images/services-bg-decor.svg") repeat-y top;
+  background-size: 100%, 1350px;
 }
 
 .services__title {
   @include fontSizes(65);
   @include tealTextGradient;
-  @include textShadow(30px);
+  @include shadow(30px);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 110px;
 }
 
 .services__container {
-  max-width: 1813px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 50px;
 
-  @media only screen and (max-width: 1650px) {
-    grid-template-columns: auto auto auto;
+  @media only screen and (max-width: $desktop) {
     gap: 30px;
   }
 
-  @media only screen and (max-width: $desktop) {
-    gap: 20px;
-  }
+  // @media only screen and (max-width: $desktop) {
+  //   gap: 20px;
+  // }
 }
 
 .service {
@@ -98,4 +94,8 @@
   &--code::before {
     background: url("../assets/icons/code.svg") no-repeat center / contain;
   }
+}
+
+.service:hover .service__link-text {
+  margin-right: 16px;
 }

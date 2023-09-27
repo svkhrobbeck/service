@@ -13,6 +13,11 @@
     font-size: 65px;
     font-weight: 800;
   }
+  // 55
+  @if $size == 55 {
+    font-size: 55px;
+    font-weight: 700;
+  }
   // 45
   @else if $size == 45 {
     font-size: 45px;
@@ -52,6 +57,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-@mixin textShadow($px: 30px) {
+@mixin shadow($px: 30px) {
   text-shadow: 0px 0px $px rgba($color: $teal, $alpha: 0.3);
 }
