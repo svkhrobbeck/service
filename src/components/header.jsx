@@ -19,7 +19,7 @@ const Header = () => {
             <img className="header__nav-toggler-img" src={iconMenu} alt="icon menu" width={36} height={36} />
           </button>
           <a className="logo header__logo" href="/">
-            <img className="logo__img" src={logoImg} alt="logo" width={97} height={49} />
+            <img className="logo__img" src={logoImg} alt="logo" width={100} height={55} />
           </a>
         </div>
 
