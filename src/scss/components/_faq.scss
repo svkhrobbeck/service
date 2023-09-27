@@ -3,7 +3,7 @@
 }
 
 .faq__title {
-  @include fontSizes(65);
+  @include fontSizes(55);
   @include tealTextGradient;
   @include shadow(40px);
   text-transform: uppercase;

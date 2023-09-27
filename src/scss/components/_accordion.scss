@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  // background-image: $greyGradient;
   background-color: rgba($color: $teal, $alpha: 0.1);
   border: 1px solid rgba($color: $white, $alpha: 0.2);
   padding: 20px;
@@ -15,6 +14,22 @@
   user-select: none;
   cursor: pointer;
   transition: $transition;
+
+  @media only screen and (max-width: $tabletL) {
+    padding: 17px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 15px;
+  }
+
+  @media only screen and (max-width: $mobileL) {
+    padding: 12px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 10px;
+  }
 }
 
 .accordion {
@@ -60,6 +75,7 @@
   border-top: none;
   transition: $transition;
   height: 0;
+  display: flex;
   overflow: hidden;
   padding: 0 20px;
 
@@ -74,6 +90,30 @@
       border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
     }
   }
+
+  @media only screen and (max-width: $tabletL) {
+    padding: 0 17px;
+
+    &--open {
+      padding: 17px;
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 0 15px;
+
+    &--open {
+      padding: 15px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 0 12px;
+
+    &--open {
+      padding: 12px;
+    }
+  }
 }
 
 .accordion__desc {
@@ -81,4 +121,6 @@
   font-weight: 400;
   color: rgba($color: $white, $alpha: 0.9);
   margin: 0;
+  padding: 0;
+  line-height: 1.4;
 }

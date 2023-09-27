@@ -11,6 +11,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 4px solid rgba($color: $teal, $alpha: 0.4);
+  outline-offset: 0;
+}
+
 body {
   height: 100%;
   background-color: $siteBg;
