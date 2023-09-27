@@ -105,11 +105,11 @@ export const socials = [
     alt: "icon telegram",
     icon: iconTelegram,
   },
-  // {
-  //   id: "icon3",
-  //   link: "https://t.me/svkhrobbeck",
-  //   text: "Elektron pochta orqali bog'lanish",
-  //   alt: "icon mail",
-  //   icon: iconMail,
-  // },
+  {
+    id: "icon3",
+    link: "mailto: suhrobbek_soatov@mail.ru",
+    text: "E-pochta orqali bog'lanish",
+    alt: "icon mail",
+    icon: iconMail,
+  },
 ];
