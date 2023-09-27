@@ -1,28 +1,111 @@
 .contact {
-  padding: 102px 0;
-  height: 100vh;
+  padding: 102px 0 40px;
+
+  @media only scren and (max-width: $desktop) {
+    padding: 84px 0 30px;
+  }
+
+  @media only scren and (max-width: $tabletL) {
+    padding: 72px 0 24px;
+  }
+
+  @media only scren and (max-width: $tablet) {
+    padding: 68px 0 22px;
+  }
+
+  @media only scren and (max-width: $mobile) {
+    padding: 46px 0 20px;
+  }
+
+  @media only scren and (max-width: $mobile) {
+    padding: 32px 0 18px;
+  }
 }
 
 .contact__title {
-  @include fontSizes(65);
+  @include fontSizes(55);
   @include tealTextGradient;
   @include shadow(40px);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 70px;
+
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 55px;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    margin-bottom: 44px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 38px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 22px;
+  }
 }
 
-.contact__links {
+.contact__container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 35px;
+
+  @media only screen and (max-width: $desktop) {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    gap: 20px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    gap: 17px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 11px;
+
+  @media only screen and (max-width: $desktop) {
+    gap: 9px;
+
+    &:last-child {
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: $tabletL) {
+    gap: 9px;
+
+    &:last-child {
+      width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+
+    &:last-child {
+      width: 100%;
+    }
+  }
 }
 
 .contact__link-icon {

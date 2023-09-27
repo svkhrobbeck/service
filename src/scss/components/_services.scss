@@ -5,20 +5,20 @@
   background-size: 100% 1066px, 100% 1066px;
 
   @media only screen and (max-width: $desktop) {
-    padding-top: 85px;
+    padding: 85px 0;
   }
 
   @media only screen and (max-width: $tabletL) {
-    padding-top: 68px;
+    padding: 68px 0;
   }
 
   @media only screen and (max-width: $tablet) {
-    padding-top: 55px;
+    padding: 55px 0 45px;
   }
 }
 
 .services__title {
-  @include fontSizes(65);
+  @include fontSizes(55);
   @include tealTextGradient;
   @include shadow(30px);
   text-align: center;
