@@ -46,6 +46,7 @@
 
 .header__nav-toggler {
   display: none;
+  outline: none;
 
   @media only screen and (max-width: $tablet) {
     display: flex;
@@ -155,6 +156,7 @@
 
 .nav__close-btn {
   display: none;
+  outline: none;
 
   @media only screen and (max-width: $tablet) {
     padding: 0 16px;
