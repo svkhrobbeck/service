@@ -12,15 +12,15 @@ const Header = () => {
   });
 
   return (
-    <header className={`header ${isSticky ? "header--sticky" : ""}`}>
+    <header id="header" className={`header ${isSticky ? "header--sticky" : ""}`}>
       <div className="header__container container">
         <div className="header__left">
           <button className="button header__nav-toggler" onClick={() => setIsNavOpen(true)}>
             <img className="header__nav-toggler-img" src={iconMenu} alt="icon menu" width={36} height={36} />
           </button>
-          <a className="logo header__logo" href="/">
+          <Link className="logo header__logo" to="root" spy={true} smooth={true}>
             <img className="logo__img" src={logoImg} alt="logo" width={100} height={55} />
-          </a>
+          </Link>
         </div>
 
         <div className="header__actions">
