@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
 import { heroImg, heroImg2x, iconArrowRight } from "../assets";
-import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -25,17 +24,21 @@ const Hero = () => {
             repeat={Infinity}
           />
           <h4 className="hero__heading">Хизматлари</h4>
-          <p className="hero__desc">
-            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ведущими дал текстов!
+          <p className="hero__desc hero__desc--desktop">
+            Бизнинг жамоамиз ўз соҳасининг мутахассисларидан иборат ва биз сизга энг қисқа вақт ичида веб-дастурларни
+            ишлаб чиқишга тайёрмиз.
+          </p>
+          <p className="hero__desc hero__desc--mobile">
+            Биз сизга энг қисқа вақт ичида веб-дастурларни ишлаб чиқишга тайёрмиз.
           </p>
           <div className="hero__actions">
-            <Link className="hero__btn button--teal button--with-icon" to="services" spy={true} smooth={true}>
+            <a className="hero__btn button--teal button--with-icon" href="#services">
               <span className="hero__btn-text button__text">Батафсил</span>
               <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
-            </Link>
-            <Link className="hero__link" to="contact" spy={true} smooth={true}>
+            </a>
+            <a className="hero__link" href="#contact">
               Саволларингиз борми?
-            </Link>
+            </a>
           </div>
         </div>
         <div className="hero__image-wrapper">

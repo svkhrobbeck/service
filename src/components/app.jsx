@@ -9,10 +9,12 @@ const App = () => {
         <Header />
         <Hero />
       </div>
-      <Features />
-      <Services />
-      <Faq />
-      <Contact />
+      <main className="main-content">
+        <Features />
+        <Services />
+        <Faq />
+        <Contact />
+      </main>
       <footer className="footer">
         ©2023 ВEБ Сервис.
         <br />

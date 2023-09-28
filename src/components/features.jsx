@@ -1,5 +1,3 @@
-import { Link } from "react-scroll";
-
 const Features = () => {
   return (
     <section className="features" id="features">
@@ -13,9 +11,9 @@ const Features = () => {
           <p className="features__description features__description--last">
             Бизнинг хизматларимиз билан қуйидаги ҳаволага босиш орқали танишишинг!
           </p>
-          <Link className="features__btn button--rect" to="services" spy={true} smooth={true}>
+          <a className="features__btn button--rect" href="#services">
             FAQ
-          </Link>
+          </a>
         </div>
         <div className="feature feature--blue feature--price">
           <h3 className="feature__title">Ўртача нархлар</h3>

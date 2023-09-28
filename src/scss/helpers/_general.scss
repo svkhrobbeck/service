@@ -1,7 +1,7 @@
 // general
 html {
-  height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  height: 100%;
   background-color: $siteBg;
   font-family: "Ruberoid", "Inter", "Arial", sans-serif;
   font-size: 16px;
@@ -38,14 +37,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-#root {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex-grow: 1;
 }

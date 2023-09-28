@@ -1,15 +1,39 @@
-import { Link } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 import { iconClose, iconMenu, logoImg } from "../assets";
 import { useState } from "react";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const { hash } = useLocation();
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 80) setIsSticky(true);
     else setIsSticky(false);
   });
+
+  const navLinks = [
+    {
+      text: "Нима учун айнан биз?",
+      path: "#features",
+      id: 1,
+    },
+    {
+      text: "Хизматлар",
+      path: "#services",
+      id: 2,
+    },
+    {
+      text: "FAQ",
+      path: "#faq",
+      id: 3,
+    },
+    {
+      text: "Боғланиш",
+      path: "#contact",
+      id: 4,
+    },
+  ];
 
   return (
     <header id="header" className={`header ${isSticky ? "header--sticky" : ""}`}>
@@ -18,7 +42,7 @@ const Header = () => {
           <button className="button header__nav-toggler" onClick={() => setIsNavOpen(true)}>
             <img className="header__nav-toggler-img" src={iconMenu} alt="icon menu" width={36} height={36} />
           </button>
-          <Link className="logo header__logo" to="root" spy={true} smooth={true}>
+          <Link className="logo header__logo" to="/" onClick={() => window.scrollTo(0, 0)}>
             <img className="logo__img" src={logoImg} alt="logo" width={100} height={55} />
           </Link>
         </div>
@@ -28,23 +52,21 @@ const Header = () => {
             <button className="button nav__close-btn" onClick={() => setIsNavOpen(false)}>
               <img className="nav__close-btn-img" src={iconClose} alt="icon close" width={36} height={36} />
             </button>
-            <Link className="nav__link" activeClass="nav__link--active" to="features" spy={true} smooth={true}>
-              Нима учун айнан биз?
-            </Link>
 
-            <Link className="nav__link" activeClass="nav__link--active" to="services" spy={true} smooth={true}>
-              Хизматлар
-            </Link>
-
-            <Link className="nav__link" activeClass="nav__link--active" to="faq" spy={true} smooth={true}>
-              FAQ
-            </Link>
-
-            <Link className="nav__link" activeClass="nav__link--active" to="contact" spy={true} smooth={true}>
-              Боғланиш
-            </Link>
+            {navLinks.map(({ text, path, id }) => (
+              <a
+                key={id}
+                className={`nav__link ${hash === path ? "nav__link--active" : ""}`}
+                href={path}
+                onClick={() => setIsNavOpen(false)}
+              >
+                {text}
+              </a>
+            ))}
           </nav>
-          <a className="button--teal-mini header__order-btn">Буюртма қилиш</a>
+          <a className="button--teal-mini header__order-btn" href="https://t.me/svkhrobbeck" target="_blank">
+            Буюртма қилиш
+          </a>
         </div>
       </div>
     </header>
