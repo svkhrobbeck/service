@@ -11,7 +11,7 @@ const Features = () => {
           <p className="features__description features__description--last">
             Бизнинг хизматларимиз билан қуйидаги ҳаволага босиш орқали танишишинг!
           </p>
-          <a className="features__btn button--rect" href="#services">
+          <a className="features__btn button--rect" href="#faq">
             FAQ
           </a>
         </div>
