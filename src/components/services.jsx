@@ -13,7 +13,7 @@ const Services = () => {
   const params = {
     modules: [Pagination, Autoplay, Navigation, Scrollbar, A11y],
     pagination: { clickable: true },
-    autoplay: { delay: 1200 },
+    autoplay: { delay: 1200, disableOnInteraction: false },
     navigation: true,
     slidesPerView: 1,
     spaceBetween: 20,
