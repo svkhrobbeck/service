@@ -69,23 +69,23 @@ export const services = [
 
 export const frequentlyQuestions = [
   {
-    title: "Ipsum dolor sit amet consectetur. Redas enimes!",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam culpa dolorum ea, voluptatum voluptates optio commodi cumque repudiandae, nam sequi esse illo suscipit quo sapiente repellendus et doloremque accusamus enim quisquam. Corporis dignissimos doloribus ullam tempore explicabo vitae cumque neque qui, vero assumenda adipisci atque temporibus architecto accusantium non sunt veritatis quisquam animi quasi expedita magni. Debitis, laudantium quas optio magnam omnis architecto, itaque unde illum aliquid quis consectetur, perferendis quaerat ducimus nam ullam. Recusandae animi voluptatibus alias corrupti, voluptas fuga eum! Delectus cumque culpa eligendi repellat, consequatur quidem vero ut, earum ducimus quas temporibus aperiam dolores quis sed?",
+    title: "Телеграм накрутка хизматида канални ўлик аккаунтлар билан тўлдирмайсизми?",
+    desc: "телеграм каналларга накрутка уришда юқорида энг арзон нарх ёзилган ва унда аниқ ўлик аккаунтлар ҳам, актив аккаунтлар ҳам бўлади. накрутка сервисларни ҳеч бири 100% лик актив аккаунт уришга қодир эмас. Шундай экан сифатлироқ накрутга урилишини хоҳласангиз, биз билан боғланинг ва қимматроқ вариантларни ҳам сизга таклиф этамиз!",
     id: "faq1",
   },
   {
-    title: "Ipsum dolor sit amet consectetur. Redas enimes!",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam culpa dolorum ea, voluptatum voluptates optio commodi cumque repudiandae, nam sequi esse illo suscipit quo sapiente repellendus et doloremque accusamus enim quisquam. Corporis dignissimos doloribus ullam tempore explicabo vitae cumque neque qui, vero assumenda adipisci atque temporibus architecto accusantium non sunt veritatis quisquam animi quasi expedita magni. Debitis, laudantium quas optio magnam omnis architecto, itaque unde illum aliquid quis consectetur, perferendis quaerat ducimus nam ullam. Recusandae animi voluptatibus alias corrupti, voluptas fuga eum! Delectus cumque culpa eligendi repellat, consequatur quidem vero ut, earum ducimus quas temporibus aperiam dolores quis sed?",
+    title: "Хизматлар учун тўловлар ва тўловни қайтариб олиш қандай амалга оширилади?",
+    desc: "Хизматга буюртмангизни тасдиқлаганингиздан сўнг, сизга карта рақами ва тўлашингиз керак бўлган сўмма миқдори юборилади, тўлов амалга оширилгач, хизмат белгиланган вақт ичида бажариб берилади. Хизмат сизга ёқмаса ёки яратиб берилган хизмат тури сиз томонингиздан шикастланиб яроқсиз ҳолатга келса, ўчириб юборилса - тўлов қайтариб берилмайди. Тўловингизни фақатгина хизмат кўрсатиш белгиланган вақтдан жуда ошиб кетгандагина қайтариб олишингиз мумкин бўлади!",
     id: "faq2",
   },
   {
-    title: "Ipsum dolor sit amet consectetur. Redas enimes!",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam culpa dolorum ea, voluptatum voluptates optio commodi cumque repudiandae, nam sequi esse illo suscipit quo sapiente repellendus et doloremque accusamus enim quisquam. Corporis dignissimos doloribus ullam tempore explicabo vitae cumque neque qui, vero assumenda adipisci atque temporibus architecto accusantium non sunt veritatis quisquam animi quasi expedita magni. Debitis, laudantium quas optio magnam omnis architecto, itaque unde illum aliquid quis consectetur, perferendis quaerat ducimus nam ullam. Recusandae animi voluptatibus alias corrupti, voluptas fuga eum! Delectus cumque culpa eligendi repellat, consequatur quidem vero ut, earum ducimus quas temporibus aperiam dolores quis sed?",
+    title: "Накрутка обуначилар ўзбек аккаунтлар бўладими ёки бошқа давлатлар аккаунтлари ҳам қўшиладими?",
+    desc: "Аввало эслатиб ўтишимиз керакки накрутка хизмати арзон турмайди, бизнинг telegram накрутка хизматимиз 12минг сўм бўлганлиги учун фақатгина чет эл фойдаланувчиларининг аккаунтлари қўшилади. Ўзбекистон аккаунтларини ҳам қўшиб берамиз, лекин у жуда ҳам қимматга тушади. Батафсил маълумотга эга бўлиш учун биз билан боғланинг!",
     id: "faq3",
   },
   {
-    title: "Ipsum dolor sit amet consectetur. Redas enimes!",
-    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae aperiam culpa dolorum ea, voluptatum voluptates optio commodi cumque repudiandae, nam sequi esse illo suscipit quo sapiente repellendus et doloremque accusamus enim quisquam. Corporis dignissimos doloribus ullam tempore explicabo vitae cumque neque qui, vero assumenda adipisci atque temporibus architecto accusantium non sunt veritatis quisquam animi quasi expedita magni. Debitis, laudantium quas optio magnam omnis architecto, itaque unde illum aliquid quis consectetur, perferendis quaerat ducimus nam ullam. Recusandae animi voluptatibus alias corrupti, voluptas fuga eum! Delectus cumque culpa eligendi repellat, consequatur quidem vero ut, earum ducimus quas temporibus aperiam dolores quis sed?",
+    title: "Телеграм учун виртуал аккаунтлар блокланмаганми?",
+    desc: "Бизда бу хизматнинг ҳам 2 хили мавжуд, бирида сизга янги виртуал рақам сотиб олиб телеграм олиб берилади, лекин аккаунт блокланган ёки блокланмаганлигига кафолат берилмайди, аккаунт блокланган бўлса, тўлов қайтарилмайди! 2-турида биз аввалдан ишончли аккаунтларни ўзимизга сақлаб қўямиз ва улар блокланмаган бўлади ва биз уларни сизга берамиз, бироқ бу хизмат аввалгисидан қимматроқдир! Агарда 1-хизмат турини танлаб аккаунт очаётганингизда код телеграм аккаунтингизга юборилди каби хабарни кўрсангиз хизматни бекор қилиш бўйича хабарни дарров бизга етказинг ва биз рақамни алмаштирамиз",
     id: "faq4",
   },
 ];
