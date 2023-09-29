@@ -212,7 +212,7 @@
     border-radius: 0;
   }
 
-  &.accordion--open:last-child .accordion__content {
+  &.accordion:last-child .accordion__content {
     border-radius: 0 0 8px 8px;
   }
 }
