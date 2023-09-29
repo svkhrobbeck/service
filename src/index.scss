@@ -1,0 +1,266 @@
+*:focus {
+  outline: 4px solid rgba(46, 236, 198, 0.4);
+  outline-offset: 0;
+}
+
+// Inter
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Ruberoid
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-Regular.woff2") format("woff2"), url("../fonts/Ruberoid-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-ExtraBold.woff2") format("woff2"), url("../fonts/Ruberoid-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-Bold.woff2") format("woff2"), url("../fonts/Ruberoid-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-Medium.woff2") format("woff2"), url("../fonts/Ruberoid-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-SemiBold.woff2") format("woff2"), url("../fonts/Ruberoid-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .font-96 {
+    @apply leading-normal font-bold text-[96px] tracking-[1.92px];
+  }
+
+  .font-65 {
+    @apply leading-normal font-extrabold text-[24px] xs:text-[28px] sm:text-[36px] md:text-[42px] lg:text-[51px] xl:text-[65px];
+  }
+
+  .font-55 {
+    @apply leading-normal font-bold text-[30px] xs:text-[36px] sm:text-[40px] md:text-[44px] lg:text-[50px] xl:text-[55px];
+  }
+
+  .font-45 {
+    @apply leading-normal font-extrabold text-[17px] xs:text-[22px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[45px];
+  }
+
+  .font-32 {
+    @apply leading-normal font-bold text-[14px] xs:text-[17px] sm:text-[21px] md:text-[23px] lg:text-[28px] xl:text-[32px];
+  }
+
+  .font-26 {
+    @apply leading-normal font-semibold text-[22px] sm:text-[23px] md:text-[24px] lg:text-[25px] xl:text-[26px];
+  }
+
+  .font-22 {
+    @apply leading-normal font-medium text-[14px] sm:text-[15px] md:text-[18px] lg:text-[20px] xl:text-[22px];
+  }
+
+  .font-20 {
+    @apply leading-normal font-normal text-[15px] md:text-[17px] lg:text-[19px] xl:text-[20px];
+  }
+
+  .font-19 {
+    @apply leading-normal font-normal text-[13px] sm:text-[15px] md:text-[17px] xl:text-[19px];
+  }
+
+  .font-17 {
+    @apply leading-normal font-semibold text-[12px] xs:text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px];
+  }
+
+  .font-15 {
+    @apply leading-normal font-normal text-[15px];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .main-subtitle {
+    @apply font-45 uppercase bg-teal-gradient text-gradient drop-shadow-teal;
+  }
+
+  .transition-main {
+    transition: all 0.4s ease;
+  }
+
+  .button {
+    @apply border-none inline-block whitespace-nowrap cursor-pointer select-none p-0 bg-[transparent] text-[inherit] transition-main hover:opacity-80 active:opacity-60;
+  }
+
+  .button--teal {
+    @apply button py-[13px] px-[25px] md:py-[17px] md:px-[33px] border border-solid border-teal rounded-[49px] bg-teal/[.1] shadow-button;
+    @extend .font-20;
+
+    &-mini {
+      @apply button py-[12px] px-[24px] border border-solid border-teal rounded-[49px] bg-teal/[.1] shadow-button;
+      @extend .font-17;
+    }
+  }
+
+  .button--with-icon {
+    @apply inline-flex items-center;
+
+    .button__text {
+      @apply mr-[12px] transition-main;
+    }
+
+    .button__icon {
+      @apply w-[9px] h-[16px];
+    }
+  }
+
+  .button--rect {
+    @apply button border border-solid border-teal relative rounded-[4px] py-[12px] px-[27px] md:py-[16px] md:px-[43px];
+    @extend .font-19;
+    box-shadow: 0px 0px 38px 0px rgba(46, 236, 197, 0.2);
+  }
+
+  .services {
+    @apply pt-[55px] pb-[45px] md:py-[68px] lg:py-[85px] xl:py-[122px] min-h-screen bg-[url(./assets/images/services-bg-decor.svg)] bg-no-repeat bg-center;
+    background-size: cover;
+
+    @media only screen and (min-width: 1024px) {
+      background-size: 100% 1066px;
+    }
+  }
+}
+
+// with icon button hover
+.arrow-btn-hover:hover span {
+  margin-right: 16px;
+}
+
+// accordion
+.accordion {
+  &:first-child .accordion__toggler {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &:last-child .accordion__toggler {
+    border-radius: 0 0 8px 8px;
+  }
+
+  &:not(:first-child) .accordion__toggler {
+    border-top: none;
+  }
+
+  &.accordion--open:not(:first-child) .accordion__toggler {
+    border-radius: 0;
+  }
+
+  &.accordion--open:last-child .accordion__content {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+// swiper
+.swiper {
+  &-wrapper {
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 40px 0;
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  &-button-next,
+  &-button-prev {
+    outline: none;
+
+    &::after {
+      color: #2eecc5;
+    }
+  }
+
+  &-pagination-bullet {
+    outline: none;
+
+    &-active {
+      background-color: #2eecc5 !important;
+    }
+  }
+}
+
+.icon {
+  &--chatgpt::before {
+    background-image: url("./assets/icons/chatgpt.svg");
+  }
+  &--code::before {
+    background-image: url("./assets/icons/code.svg");
+  }
+  &--telegram::before {
+    background-image: url("./assets/icons/telegram.svg");
+  }
+  &--instagram::before {
+    background-image: url("./assets/icons/instagram.svg");
+  }
+}

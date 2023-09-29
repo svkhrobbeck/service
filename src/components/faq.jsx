@@ -6,9 +6,15 @@ const Faq = () => {
   const [setselectedQuestion, setSetselectedQuestion] = useState("");
 
   return (
-    <section className="faq" id="faq">
-      <div className="container faq__container">
-        <h2 className="faq__title">FAQ</h2>
+    <section className="min-h-[60vh]" id="faq">
+      {/* faq container */}
+      <div className="container">
+        {/* faq title */}
+        <h2 className="font-55 text-gradient drop-shadow-teal bg-teal-gradient text-center uppercase mb-[53px] md:mb-[73px]">
+          FAQ
+        </h2>
+
+        {/* accordions */}
         <div className="faq__accordions">
           {frequentlyQuestions.map(question => (
             <Accordion

@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
 const Services = () => {
+  // swiper params
   const params = {
     modules: [Pagination, Autoplay, Navigation, Scrollbar, A11y],
     pagination: { clickable: true },
@@ -35,8 +36,13 @@ const Services = () => {
 
   return (
     <section className="services" id="services">
-      <h2 className="services__title">Хизматлар</h2>
-      <Swiper className="services__container" {...params}>
+      {/* services title */}
+      <h2 className="font-55 text-gradient drop-shadow-teal bg-teal-gradient text-center uppercase mb-[42px] md:mb-[52px] lg:mb-[70px] xl:mb-[90px]">
+        Хизматлар
+      </h2>
+
+      {/* services slider / service cards */}
+      <Swiper className="px-[20px]" {...params}>
         {services.map(service => (
           <SwiperSlide key={service.id}>
             <ServiceCard {...service} />
