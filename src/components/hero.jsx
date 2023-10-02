@@ -20,7 +20,7 @@ const Hero = () => {
               sequence={[
                 "веб-сайт яратиш",
                 1000,
-                "Telegram рақам",
+                "Telegram аккаунт",
                 1000,
                 "Instagram обуначи",
                 1000,
@@ -72,7 +72,7 @@ const Hero = () => {
           bg-[url(./assets/images/hero-circular.svg)]
           bg-center
         bg-no-repeat
-        bg-contain
+        bg-contain animation-scale
         "
         >
           {/* hero image */}

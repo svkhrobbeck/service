@@ -264,3 +264,22 @@
     background-image: url("./assets/icons/instagram.svg");
   }
 }
+
+.animation-scale {
+  animation: animScale 2s infinite;
+  transform-origin: bottom;
+}
+
+@keyframes animScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.98);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

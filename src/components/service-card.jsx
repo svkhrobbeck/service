@@ -20,7 +20,8 @@ const ServiceCard = ({ name, desc, price, time, iconName }) => {
       {/* service more link */}
       <a
         className={`icon--${iconName} before:flex-shrink-0 before:inline-block before:w-[24px] before:h-[24px] before:mr-[6px] before:bg-no-repeat before:bg-center beforea:bg-contain button--teal button--with-icon`}
-        href="#"
+        href="https://t.me/svkhrobbeck"
+        target="_blank"
       >
         {/* more link text */}
         <span className="font-17 button__text">Батафсил маълумот</span>
