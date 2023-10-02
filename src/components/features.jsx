@@ -16,7 +16,7 @@ const Features = () => {
         <div className="max-w-none lg:max-w-[672px] w-full flex flex-col items-center lg:items-start text-center lg:text-left sml:col-span-2 col-span-1">
           {/* features badge tablet */}
           <span className="md:hidden text-center text-[11px] py-[11px] px-[19px] font-medium leading-normal rounded-[41px] border-[1.5px] border-solid border-teal bg-teal/[.4] shadow-button mb-[18px]">
-            Жамоамиз энг энг яхши мутахассислари иборат.
+            Жамоамиз энг энг яхши мутахассислардан иборат.
           </span>
 
           {/* features title */}
