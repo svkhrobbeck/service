@@ -1,5 +1,4 @@
-import { Contact, Faq, Header, Hero, Services } from "./";
-import Features from "./features";
+import { Contact, Faq, Footer, Header, Hero, Services, Features } from "./";
 
 const App = () => {
   return (
@@ -22,11 +21,7 @@ const App = () => {
       </main>
 
       {/* footer */}
-      <footer className="py-[32px] text-center leading-[1.35] text-[#fff]/[.7]">
-        ©2023 ВEБ Сервис.
-        <br />
-        suhrobbek_soatov@mail.ru
-      </footer>
+      <Footer />
     </>
   );
 };

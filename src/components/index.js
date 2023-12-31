@@ -5,4 +5,6 @@ export { default as Services } from "./services";
 export { default as ServiceCard } from "./service-card";
 export { default as Contact } from "./contact";
 export { default as Faq } from "./faq";
+export { default as Features } from "./features";
 export { default as Accordion } from "./accordion";
+export { default as Footer } from "./footer";
