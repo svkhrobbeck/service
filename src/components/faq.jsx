@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Accordion } from ".";
-import { frequentlyQuestions } from "../helpers/constants";
+import frequentlyQuestions from "../data/faq.json";
 
 const Faq = () => {
   const [setselectedQuestion, setSetselectedQuestion] = useState("");
@@ -16,7 +16,7 @@ const Faq = () => {
 
         {/* accordions */}
         <div className="faq__accordions">
-          {frequentlyQuestions.map(question => (
+          {frequentlyQuestions.map((question) => (
             <Accordion
               key={question.id}
               {...question}

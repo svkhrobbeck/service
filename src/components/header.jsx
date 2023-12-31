@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { iconClose, iconMenu, logoImg } from "../assets";
 import { useState } from "react";
+import { navLinks } from "../helpers/constants";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -11,29 +12,6 @@ const Header = () => {
     if (window.scrollY > 80) setIsSticky(true);
     else setIsSticky(false);
   });
-
-  const navLinks = [
-    {
-      text: "Нима учун айнан биз?",
-      path: "#features",
-      id: 1,
-    },
-    {
-      text: "Хизматлар",
-      path: "#services",
-      id: 2,
-    },
-    {
-      text: "FAQ",
-      path: "#faq",
-      id: 3,
-    },
-    {
-      text: "Боғланиш",
-      path: "#contact",
-      id: 4,
-    },
-  ];
 
   return (
     <header
@@ -48,7 +26,10 @@ const Header = () => {
       <div className="relative md:static block md:flex items-center justify-between container">
         <div className="flex md:block items-center justify-between">
           {/* nav toggler */}
-          <button className="button md:hidden outline-0" onClick={() => setIsNavOpen(true)}>
+          <button
+            className="button md:hidden outline-0"
+            onClick={() => setIsNavOpen(true)}
+          >
             <img
               className="max-w-[22px] xs:max-w-[32px] sm:max-w-[36px] w-full h-auto drop-shadow-teal"
               src={iconMenu}
@@ -101,7 +82,9 @@ const Header = () => {
               <a
                 key={id}
                 className={` lg:active:opacity-60 lg:hover:text-teal/[.6] hover:opacity-80 font-bold md:font-normal text-teal md:text-[#fff] block w-full md:w-auto font-20 md:inline-block p-[4px] text-center md:text-left relative z-[4] transition-main cursor-pointer select-none [&:not(:last-child)]:mb-[11px] md:[&:not(:last-child)]:mb-0 ${
-                  hash === path ? "drop-shadow-teal bg-[#2f9782] md:bg-[transparent] text-teal" : ""
+                  hash === path
+                    ? "drop-shadow-teal bg-[#2f9782] md:bg-[transparent] text-teal"
+                    : ""
                 }`}
                 href={path}
                 onClick={() => setIsNavOpen(false)}

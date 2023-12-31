@@ -1,7 +1,13 @@
-import { services } from "../helpers/constants";
+import services from "../data/services.json";
 import { ServiceCard } from ".";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Scrollbar, A11y, Navigation, Autoplay } from "swiper/modules";
+import {
+  Pagination,
+  Scrollbar,
+  A11y,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 
 // styles
 import "swiper/css";
@@ -43,7 +49,7 @@ const Services = () => {
 
       {/* services slider / service cards */}
       <Swiper className="px-[20px]" {...params}>
-        {services.map(service => (
+        {services.map((service) => (
           <SwiperSlide key={service.id}>
             <ServiceCard {...service} />
           </SwiperSlide>
