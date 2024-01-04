@@ -26,12 +26,14 @@ const Features = () => {
 
           {/* feature description */}
           <p className="font-17 mb-[13px] text-[#fff]/[.65] font-normal">
-            Рақобатчилар ўзларини энг зўри эканликларини айтишсада, биз бунинг аксини амалда исботлаймиз.
+            Рақобатчилар ўзларини энг зўри эканликларини айтишсада, биз бунинг
+            аксини амалда исботлаймиз.
           </p>
 
           {/* feature description last */}
           <p className="font-17 mb-[44px] text-[#fff]/[.65] font-normal">
-            Бизнинг хизматларимиз билан қуйидаги ҳаволага босиш орқали танишишинг!
+            Бизнинг хизматларимиз билан қуйидаги ҳаволага босиш орқали
+            танишишинг!
           </p>
 
           {/* features link (faq) */}
@@ -52,8 +54,8 @@ const Features = () => {
 
           {/* feature desc */}
           <p className="font-17 font-normal">
-            Нархларни ҳамёнбоп қилиш учун иложи борича ўз хизматларимиз оптималлаштирамиз ва сизга маъқул келадиган
-            нархларни айтамиз!
+            Нархларни ҳамёнбоп қилиш учун иложи борича ўз хизматларимизни
+            оптималлаштирамиз ва сизга маъқул келадиган нархларни айтамиз!
           </p>
         </div>
 
@@ -62,11 +64,14 @@ const Features = () => {
           className={`shadow-grey before:w-[113px] before:h-[137px] xs:before:w-[190px] xs:before:h-[180px] bg-grey-vertical-gradient sm:before:w-[259px] sm:before:h-[245px] sml:before:w-[145px] sml:before:h-[153px] xl:before:w-[145px] xl:before:h-[161px] 2xl:before:w-[200px] 2xl:before:h-[189px] before:bg-[url(./assets/images/deadline.svg)] ${featureCardClasses} ${featureBeforeClasses}`}
         >
           {/* feature-card title */}
-          <h3 className="font-26 mb-[20px]">Ишни ўз вақтида етказиб берамиз!</h3>
+          <h3 className="font-26 mb-[20px]">
+            Ишни ўз вақтида етказиб берамиз!
+          </h3>
 
           {/* feature desc */}
           <p className="font-17 font-normal">
-            Ҳар бир босқични белгиланган муддатга мувофиқ режалаштирамиз ва деадлинега риоя қиламиз
+            Ҳар бир босқични белгиланган муддатга мувофиқ режалаштирамиз ва
+            deadline'га риоя қиламиз
           </p>
         </div>
 
@@ -79,7 +84,8 @@ const Features = () => {
 
           {/* feature desc */}
           <p className="font-17 font-normal">
-            Жамоамизда кўплаб мутахассислар бор ва уларнинг ҳар бири ўз ишинг устаси
+            Жамоамизда кўплаб мутахассислар бор ва уларнинг ҳар бири ўз ишининг
+            устаси
           </p>
         </div>
 
@@ -92,8 +98,8 @@ const Features = () => {
 
           {/* feature desc */}
           <p className="font-17 font-normal">
-            Бизнинг 24/7 онлайн ишлаймиз. Сизга ёрдам беришга ва саволларингизга жавоб олишингизга кўмаклашишга доим
-            тайёрмиз.
+            Биз 24/7 онлайн ишлаймиз. Сизга ёрдам беришга ва саволларингизга
+            жавоб олишингизга кўмаклашишга доим тайёрмиз.
           </p>
         </div>
       </div>
