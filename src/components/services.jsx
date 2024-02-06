@@ -1,13 +1,7 @@
 import services from "../data/services.json";
 import { ServiceCard } from ".";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Scrollbar,
-  A11y,
-  Navigation,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Scrollbar, A11y, Navigation, Autoplay } from "swiper/modules";
 
 // styles
 import "swiper/css";
@@ -21,6 +15,7 @@ const Services = () => {
     modules: [Pagination, Autoplay, Navigation, Scrollbar, A11y],
     pagination: { clickable: true },
     autoplay: { delay: 2400, disableOnInteraction: false },
+    loop: true,
     navigation: true,
     slidesPerView: 1,
     spaceBetween: 20,
@@ -49,7 +44,7 @@ const Services = () => {
 
       {/* services slider / service cards */}
       <Swiper className="px-[20px]" {...params}>
-        {services.map((service) => (
+        {services.map(service => (
           <SwiperSlide key={service.id}>
             <ServiceCard {...service} />
           </SwiperSlide>
