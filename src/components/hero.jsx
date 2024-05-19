@@ -79,7 +79,7 @@ const Hero = () => {
 
         {/* hero bg */}
         <div
-          className="absolute bottom-0 w-[340px] h-[340px] sm:w-[430px] sm:h-[430px] md:w-[470px] md:h-[470px] lg:w-[570px] lg:h-[570px] 2xl:w-[650px] 2xl:h-[650px]
+          className="absolute bottom-0 w-[300px] h-[300px] sm:w-[390px] sm:h-[390px] md:w-[430px] md:h-[430px] lg:w-[530px] lg:h-[530px] 2xl:w-[610px] 2xl:h-[610px]
           -right-[140px]
           xl:-right-[190px]
           bg-[url(./assets/images/hero-circular.svg)]
@@ -90,7 +90,7 @@ const Hero = () => {
         >
           {/* hero image */}
           <img
-            className="w-full h-auto absolute bottom-0 -left-[60px] max-w-[323px] sm:max-w-[400px] md:max-w-[430px] lg:max-w-[490px] xl:max-w-[550px] 2xl:max-w-[603px]"
+            className="w-full h-auto absolute bottom-0 -left-[60px] max-w-[283px] sm:max-w-[360px] md:max-w-[290px] lg:max-w-[450px] xl:max-w-[510px] 2xl:max-w-[563px]"
             src={heroImg}
             alt="businessman"
             width={663}
