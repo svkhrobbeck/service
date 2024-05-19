@@ -16,7 +16,7 @@ const Faq = () => {
 
         {/* accordions */}
         <div className="faq__accordions">
-          {frequentlyQuestions.map((question) => (
+          {frequentlyQuestions.map(question => (
             <Accordion
               key={question.id}
               {...question}

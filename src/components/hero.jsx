@@ -40,25 +40,38 @@ const Hero = () => {
 
           {/* description desktop */}
           <p className="mb-[17px] font-22 font-normal xs:font-medium xs:mb-[20px] md:mb-[25px] text-[#fff]/[.65] hidden xs:block xs:max-w-[320px] sm:max-w-[350px] md:max-w-[420px] lg:max-w-[590px] xl:max-w-[672px]">
-            Бизнинг жамоамиз ўз соҳасининг мутахассисларидан иборат ва биз сизга энг қисқа вақт ичида веб-дастурларни
-            ишлаб чиқишга тайёрмиз.
+            Бизнинг жамоамиз ўз соҳасининг мутахассисларидан иборат ва биз сизга
+            энг қисқа вақт ичида веб-дастурларни ишлаб чиқишга тайёрмиз.
           </p>
 
           {/* description mobile */}
           <p className="mb-[17px] font-22 font-normal max-w-[190px] text-[#fff]/[.65] xs:hidden">
-            Биз сизга энг қисқа вақт ичида веб-дастурларни ишлаб чиқишга тайёрмиз.
+            Биз сизга энг қисқа вақт ичида веб-дастурларни ишлаб чиқишга
+            тайёрмиз.
           </p>
 
           {/* links */}
           <div className="flex items-center gap-[24px]">
             {/* more link */}
-            <a className="arrow-btn-hover button--teal button--with-icon" href="#services">
+            <a
+              className="arrow-btn-hover button--teal button--with-icon"
+              href="#services"
+            >
               <span className="font-19 button__text">Батафсил</span>
-              <img className="button__icon" src={iconArrowRight} alt="arrow right icon" width={9} height={16} />
+              <img
+                className="button__icon"
+                src={iconArrowRight}
+                alt="arrow right icon"
+                width={9}
+                height={16}
+              />
             </a>
 
             {/* questions link */}
-            <a className="cursor-pointer text-[#fff]/[.4] hidden md:block" href="#contact">
+            <a
+              className="cursor-pointer text-[#fff]/[.4] hidden md:block"
+              href="#contact"
+            >
               Саволларингиз борми?
             </a>
           </div>

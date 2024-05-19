@@ -22,7 +22,13 @@ const Contact = () => {
             target="_blank"
           >
             {/* link icon */}
-            <img className="w-[24px] h-[24px]" src={icon} alt={alt} width={24} height={24} />
+            <img
+              className="w-[24px] h-[24px]"
+              src={icon}
+              alt={alt}
+              width={24}
+              height={24}
+            />
 
             {/* link text */}
             <span>{text}</span>

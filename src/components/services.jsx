@@ -1,7 +1,13 @@
 import services from "../data/services.json";
 import { ServiceCard } from ".";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Scrollbar, A11y, Navigation, Autoplay } from "swiper/modules";
+import {
+  Pagination,
+  Scrollbar,
+  A11y,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 
 // styles
 import "swiper/css";
