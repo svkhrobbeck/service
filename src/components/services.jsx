@@ -1,42 +1,33 @@
-import services from "../data/services.json";
-import { ServiceCard } from ".";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Scrollbar,
-  A11y,
-  Navigation,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Scrollbar, Navigation, Autoplay } from "swiper/modules";
+
+import services from "../data/services.json";
+
+import { ServiceCard } from ".";
 
 // styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import "swiper/css/pagination";
 
 const Services = () => {
   // swiper params
   const params = {
-    modules: [Pagination, Autoplay, Navigation, Scrollbar, A11y],
+    modules: [Pagination, Autoplay, Navigation, Scrollbar],
     pagination: { clickable: true },
-    autoplay: { delay: 2400, disableOnInteraction: false },
+    autoplay: { delay: 5500, disableOnInteraction: false },
     loop: true,
-    navigation: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20,
       },
       680: {
         slidesPerView: 2,
-        spaceBetween: 25,
       },
       1100: {
         slidesPerView: 3,
-        spaceBetween: 30,
       },
     },
   };
@@ -48,14 +39,19 @@ const Services = () => {
         Хизматлар
       </h2>
 
-      {/* services slider / service cards */}
-      <Swiper className="px-[20px]" {...params}>
-        {services.map(service => (
-          <SwiperSlide key={service.id}>
-            <ServiceCard {...service} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="px-3 md:px-4 lg:px-5">
+        {/* services slider / service cards */}
+        <Swiper {...params}>
+          {services.map(service => (
+            <SwiperSlide
+              className="!h-auto !flex !cursor-pointer md:!px-4"
+              key={service.id}
+            >
+              <ServiceCard {...service} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };

@@ -57,8 +57,8 @@ export default {
         screens: {
           xs: "100%",
           md: "100%",
-          lg: "1200px",
-          xl: "1240px",
+          lg: "1100px",
+          xl: "1200px",
         },
       },
     },

@@ -20,6 +20,7 @@ const Contact = () => {
             className="w-full sm:w-auto flex-shrink-0 flex items-center justify-center text-center [&:last-child]:w-[100%] sm:[&:last-child]:w-auto md:[&:last-child]:w-[60%] xl:[&:last-child]:w-auto gap-[9px] xl:gap-[11px] button--rect"
             href={link}
             target="_blank"
+            rel="noreferrer"
           >
             {/* link icon */}
             <img

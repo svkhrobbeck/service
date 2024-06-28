@@ -3,7 +3,7 @@ const Features = () => {
     "before:inline-block before:bg-no-repeat before:bg-contain before:absolute before:bg-right-bottom before:bottom-0 before:right-0 before:transition-main before:-z-[1]";
 
   const featureCardClasses =
-    "h-[269px] xs:h-[289px] min-[670px]:h-[300px] min-[840px]:h-[350px] lg:h-[310px] xl:h-[350px] 2xl:h-[400px] w-[269px] xs:w-full min-[670px]:w-[300px] min-[840px]:w-[350px] lg:w-[310px] xl:w-[350px] 2xl:w-[400px] pt-[30px] pb-[0] px-[22px] xs:px-[28px] lg:p-[30px] xl:p-[36px] 2xl:p-[42px] relative z-[1] rounded-[6px] overflow-hidden transition-main justify-self-center lg:justify-self-stretch";
+    "h-[295px] xs:h-[295px] min-[670px]:h-[300px] min-[840px]:h-[350px] lg:h-[310px] xl:h-[350px] 2xl:h-[400px] w-[100%] xl:w-[370px] pt-[30px] pb-[0] px-[22px] xs:px-[28px] lg:p-[30px] xl:p-[36px] 2xl:p-[42px] relative z-[1] rounded-[6px] overflow-hidden transition-main justify-self-center lg:justify-self-stretch";
 
   return (
     <section
@@ -11,9 +11,9 @@ const Features = () => {
       id="features"
     >
       {/* features container */}
-      <div className="container grid grid-cols-1 min-[670px]:grid-cols-2 lg:grid-cols-3 gap-y-[35px] lg:gap-[25px] xl:gap-[35px]">
+      <div className="container grid grid-cols-1 min-[670px]:grid-cols-2 lg:grid-cols-3 gap-y-[15px] gap-x-[15px] lg:gap-[15px] xl:gap-[25px]">
         {/* features content */}
-        <div className="max-w-none lg:max-w-[672px] w-full flex flex-col items-center lg:items-start text-center lg:text-left sml:col-span-2 col-span-1">
+        <div className="max-w-none lg:max-w-[642px] w-full flex flex-col items-center lg:items-start text-center lg:text-left sml:col-span-2 col-span-1">
           {/* features badge tablet */}
           <span className="md:hidden text-center text-[11px] py-[11px] px-[19px] font-medium leading-normal rounded-[41px] border-[1.5px] border-solid border-teal bg-teal/[.4] shadow-button mb-[18px]">
             Жамоамиз энг энг яхши мутахассислардан иборат.
@@ -71,7 +71,7 @@ const Features = () => {
           {/* feature desc */}
           <p className="font-17 font-normal">
             Ҳар бир босқични белгиланган муддатга мувофиқ режалаштирамиз ва
-            deadline'га риоя қиламиз
+            deadline&apos;га риоя қиламиз
           </p>
         </div>
 

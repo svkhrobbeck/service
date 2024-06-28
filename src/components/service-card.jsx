@@ -2,7 +2,7 @@ import { iconArrowRight } from "../assets";
 
 const ServiceCard = ({ name, desc, price, time, iconName }) => {
   return (
-    <div className="pt-[26px] sm:pt-[28px] md:pt-[33px] lg:pt-[38px] 2xl:pt-[44px] pb-[16px] sm:pb-[17px] lg:pb-[23px] 2xl:pb-[24px] px-[12px] sm:px-[15px] md:px[21px] lg:px-[26px] 2xl:px-[30px] flex-grow-[1] bg-grey bg-grey-gradient border border-solid border-[#fff]/[.2] rounded-[36px] w-full max-w-full xs:max-w-[94%] sm:max-w-[84%] min-[68px]:max-w-full 2xl:max-w-[420px] flex flex-col text-center">
+    <div className="pt-[26px] sm:pt-[28px] md:pt-[33px] lg:pt-[38px] 2xl:pt-[44px] pb-[16px] sm:pb-[17px] lg:pb-[23px] 2xl:pb-[24px] px-[12px] sm:px-[15px] md:px[21px] lg:px-[26px] 2xl:px-[30px] flex-grow-[1] bg-grey bg-grey-gradient border border-solid border-[#fff]/[.2] rounded-[36px] w-full max-w-full xs:max-w-[94%] sm:max-w-[450px] flex flex-col text-center">
       {/* service title */}
       <h3 className="font-32 mb-[24px] xs:mb-[28px] md:mb-[32px] lg:mb-[38px] xl:mb-[46px] leading-normal">
         {name}
@@ -28,6 +28,7 @@ const ServiceCard = ({ name, desc, price, time, iconName }) => {
         className={`icon--${iconName} before:flex-shrink-0 before:inline-block before:w-[24px] before:h-[24px] before:mr-[6px] before:bg-no-repeat before:bg-center beforea:bg-contain button--teal button--with-icon`}
         href="https://t.me/svkhrobbeck"
         target="_blank"
+        rel="noreferrer"
       >
         {/* more link text */}
         <span className="font-17 button__text">Батафсил маълумот</span>

@@ -3,7 +3,7 @@ import { heroImg, heroImg2x, iconArrowRight } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="pt-[150px] xs:pt-[190px] sm:pt-[320px] md:pt-[340px] flex-grow-[0] sm:flex-grow-[1] flex flex-col w-full overflow-x-hidden">
+    <section className="pt-[120px] xs:pt-[190px] sm:pt-[320px] md:pt-[280px] flex-grow-[0] sm:flex-grow-[1] flex flex-col w-full overflow-x-hidden">
       {/* hero container */}
       <div className="relative flex items-start flex-grow-[1] w-full container">
         {/* hero content */}
@@ -79,7 +79,7 @@ const Hero = () => {
 
         {/* hero bg */}
         <div
-          className="absolute bottom-0 w-[300px] h-[300px] sm:w-[390px] sm:h-[390px] md:w-[430px] md:h-[430px] lg:w-[530px] lg:h-[530px] 2xl:w-[610px] 2xl:h-[610px]
+          className="absolute aspect-square bottom-0 w-[300px] sm:w-[390px] md:w-[430px] 2xl:w-[460px]
           -right-[140px]
           xl:-right-[190px]
           bg-[url(./assets/images/hero-circular.svg)]
@@ -90,7 +90,7 @@ const Hero = () => {
         >
           {/* hero image */}
           <img
-            className="w-full h-auto absolute bottom-0 -left-[60px] max-w-[283px] sm:max-w-[360px] md:max-w-[290px] lg:max-w-[450px] xl:max-w-[510px] 2xl:max-w-[563px]"
+            className="w-full h-auto absolute bottom-0 -left-[60px] sm:-left-[40px] lg:-left-[60px] max-w-[260px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[460px]"
             src={heroImg}
             alt="businessman"
             width={663}
