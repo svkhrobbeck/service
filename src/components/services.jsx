@@ -39,7 +39,7 @@ const Services = () => {
         Хизматлар
       </h2>
 
-      <div className="px-3 md:px-4 lg:px-5">
+      <div className="container">
         {/* services slider / service cards */}
         <Swiper {...params}>
           {services.map(service => (
